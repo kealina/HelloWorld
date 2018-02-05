@@ -8,14 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class DemoApplication {
+public class EurekaClient1Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(EurekaClient1Application.class, args);
 	}
 
 	@Value("${server.port}")
@@ -25,5 +24,4 @@ public class DemoApplication {
 	public String home(@RequestParam String name) {
 		return "hi,"+name+",i am from port:"+port;
 	}
-
 }
