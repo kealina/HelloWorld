@@ -1,3 +1,0 @@
-1.Eureka 发现和注册服务
-2.ribbon 、Feign 负载均衡客户端,可以很好的控制htt和tcp的一些行为
-3.Hystrix 断路器
